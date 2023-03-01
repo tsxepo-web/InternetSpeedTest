@@ -1,6 +1,6 @@
-import { speedDOM } from "./speedDependancy/DOM.js";
-import { speedStorage } from "./speedDependancy/storeLocal.js";
-import { calculateSpeed } from "./speedDependancy/calculateSpeed.js";
+import { calculateSpeed } from "./modules/calculateSpeed.js";
+import { toHtml } from "./modules/DOM.js";
+import { storage } from "./modules/storage.js";
 
 class FetchSpeed{
     constructor() {};
@@ -13,8 +13,8 @@ class FetchSpeed{
             
             const imageSize = response.headers.get('content-length');
             var speed = calculateSpeed(startTime, endTime, imageSize);
-            speedStorage(speed);
-            speedDOM(speed);
+            storage(speed);
+            toHtml(speed);
         } catch (errror) {
             return console.log(errror.message);
         }

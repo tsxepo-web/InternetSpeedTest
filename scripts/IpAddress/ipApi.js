@@ -1,5 +1,5 @@
-import { toHtml } from "./ipApiDependancy/DOM.js";
-import { storage } from "./ipApiDependancy/storeLocal.js";
+import { toHtml } from "./modules/DOM.js";
+import { storage } from "./modules/storage.js";
 
 class FetchIpApi{
     constructor() {
