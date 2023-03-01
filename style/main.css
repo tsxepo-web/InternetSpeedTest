@@ -13,6 +13,7 @@ body {
 }
 .img {
     width: 400px;
+    height: 300px;
 }
 .child {
     box-shadow: 5px 10px 10px darkgreen;
@@ -59,6 +60,7 @@ li:hover {
 }
 footer {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 0.5em;
+    justify-content: center;
+    bottom: 0;    
+    width: 100%;
 }
