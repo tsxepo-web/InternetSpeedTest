@@ -19,4 +19,4 @@ See [abstractapi](https://www.abstractapi.com) for more details.
 ### Speed Server
 This returns client's internet speed in Mbps.
 - the speed is achieved using this formula:
-- ![formula](https://github.com/tsxepo-web/InternetSpeedTest/blob/4b7edb015edd4a89b5cde809f1357f69f206b498/SpeedTestFormula.drawio.svg) 
+- ![formula](https://github.com/tsxepo-web/InternetSpeedTest/blob/master/SpeedTestFormula.drawio.svg) 
