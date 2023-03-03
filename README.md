@@ -1,3 +1,3 @@
 # Welcome to Internet Speed Test
 ## Architecture
-![architecture](https://github.com/tsxepo-web/InternetSpeedTest/blob/64ea8c80c15861380bd83062e03a1cdf8b9f26c1/SpeedTest.drawio.svg)
+![architecture](https://github.com/tsxepo-web/InternetSpeedTest/blob/3ee7a020ef7fe867da0dc6a3d8c6575981272e67/SpeedTest.drawio.svg)
