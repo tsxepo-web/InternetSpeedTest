@@ -8,6 +8,10 @@ on load the website's html returns the client's:
 - Internet Service Provider
 - Internet Speed in Mbps
 
-## Local Storage
+### Local Storage
 the returned client information is then saved to the browser's Local Storage.
 - the information is also used when the client visits the site again.
+
+### IP Api
+abtractapi is used to extract the client's ip address and internet service provider.
+See [abstractapi](https://www.abstractapi.com) for more details.
