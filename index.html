@@ -1,44 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect Speed Test</title>
     <link rel="stylesheet" href="style/main.css">
-    <script src="https://kit.fontawesome.com/831205a5cd.js" crossorigin="anonymous"></script>
-    <title>Speed Test</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container"> 
-        <div class="child">
-            <img class="img" src="style/images/internet-tower.jpg" alt="internet-tower">
-            <div class="info">
-                <h1 class="heading"> Your Internet Speed Is:</h1>
-                <p id="mbps" class="mbps"><span></span></p>
-                <p class="ip" id="ip"></p>
-                <p class="isp" id="isp"></p>
+    <div class="container">
+        <div class="loader-widget">
+            <h1>CHECK YOUR INTERNET SPEED</h1>
+            <hr>
+            <br>
+            <br>
+            <span class="loader hide"></span>
+            <div class="loader-content">
+                <div class="content hide">24<small>Mbps</small></div>
+                <button>Check</button>
             </div>
+            <br>
+            <div class="ip" id="ip"></div>
+            <div class="ip" id="isp"></div>
         </div>
     </div>
-    <br>
-    <hr>
-    <br>
-    <footer>
-        <a href="https://github.com/tsxepo-web"><i class="fa-brands fa-github fa-xl"></i></a> 
-    </footer>
-    <script type="module" src="scripts/IpAddress/ipApi.js"></script>
     <script type="module" src="scripts/speed/internetSpeed.js"></script>
+    <script type="module" src="scripts/IpAddress/ipApi.js"></script>
 </body>
 </html>
