@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect Speed Test</title>
+    <link rel="icon" href="style/images/logos/tsxepo-website-favicon-color.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+</head>
+<body>
+    <main class="grid w-full min-h-screen text-gray-100 bg-gray-900 place-content-center">
+
+        <section
+            class="p-6 space-y-6 bg-gray-800 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0">
+            <div class="flex items-center justify-center">
+                <svg class="transform -rotate-90 w-72 h-72">
+                    <circle cx="145" cy="145" r="120" stroke-width="70"
+                    fill="transparent"
+                        class="text-gray-700" />
+                    <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
+                    fill="transparent" 
+                        class="text-blue-500" id="circumference" />
+                </svg>
+                <span id="pcnt" class="absolute text-5xl"></span>
+            </div>
+            <div class="flex items-center justify-center">
+                <svg class="transform -rotate-90 w-72 h-72">
+                    <circle cx="145" cy="145" r="120" stroke-width="70"
+                    fill="transparent"
+                        class="text-gray-700" />
+                    <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
+                    fill="transparent" 
+                        class="text-blue-500" id="upload-progress" />
+                </svg>
+                <span id="mbps-upload" class="absolute text-5xl"></span>
+            </div>
+        </section>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" id="file" name="file">
+            <button type="submit" role="button">Upload File</button>
+        </form>
+        <p class="ip-address"></p>
+        <p class="isp"></p>
+        <!-- <input type="file" onchange="upload(this.files[0])"> -->
+    <script type="module" src="scripts/speed/downloadProgress.js"></script>
+    <script type="module" src="scripts/speed/uploadProgress.js"></script>
+</body>
+</html>
